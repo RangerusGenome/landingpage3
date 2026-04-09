@@ -22,13 +22,13 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'ListingEtl — AI-Powered Product Listing Optimization',
+  title: 'CatalogSeo — AI-Powered Product Listing Optimization',
   description:
     'Turn your product pages into Google traffic machines.',
   generator: 'v0.app',
   keywords: ['SEO', 'product listings', 'Shopify', 'WooCommerce', 'AI optimization', 'e-commerce SEO'],
   openGraph: {
-    title: 'ListingEtl — Turn your product pages into Google traffic machines',
+    title: 'CatalogSeo — Turn your product pages into Google traffic machines',
     description: 'Turn your product pages into Google traffic machines.',
     type: 'website',
   },
@@ -41,6 +41,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${fraunces.variable} ${outfit.variable} ${jetbrainsMono.variable}`}>
+      <head>
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async />
+      </head>
       <body className="font-sans antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}

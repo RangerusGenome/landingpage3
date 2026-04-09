@@ -1,3 +1,5 @@
+"use client"
+
 export function CtaSection() {
   return (
     <section
@@ -27,13 +29,17 @@ export function CtaSection() {
           holding back your organic traffic. No commitment, no credit card.
         </p>
         <div className="flex justify-center">
-          <a
-            href="#"
+          <button
+            onClick={() => {
+              if (typeof window !== 'undefined' && (window as any).Calendly) {
+                (window as any).Calendly.initPopupWidget({url: 'https://calendly.com/trevorkuhlmannk/free-store-audit-15-mins'});
+              }
+            }}
             className="btn-orange inline-flex items-center gap-2 px-10 py-4 rounded-full text-base font-semibold"
           >
             Request Free Audit
             <span aria-hidden="true">→</span>
-          </a>
+          </button>
         </div>
       </div>
     </section>
@@ -51,7 +57,7 @@ export function Footer() {
     >
       <div className="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-sm" style={{ color: "var(--text-muted)" }}>
-          &copy; 2026 ListingEtl. All rights reserved.
+          &copy; 2026 CatalogSeo. All rights reserved.
         </p>
         <nav className="flex items-center gap-6" aria-label="Footer navigation">
           {["Privacy", "Terms", "Contact"].map((link) => (

@@ -52,14 +52,14 @@ export function HeroTerminal() {
           className="ml-4 text-xs"
           style={{ color: "var(--text-muted)", fontFamily: "var(--font-jetbrains-mono)" }}
         >
-          ListingEtl-pipeline — zsh
+          CatalogSeo-pipeline — zsh
         </span>
       </div>
 
       {/* Terminal body */}
       <div className="p-5 min-h-[280px] font-mono text-sm leading-relaxed space-y-2">
         <div style={{ color: "var(--text-muted)", fontFamily: "var(--font-jetbrains-mono)", fontSize: "0.75rem" }}>
-          $ ListingEtl run --store myshop.myshopify.com
+          $ CatalogSeo run --store myshop.myshopify.com
         </div>
         {lines.slice(0, visibleLines).map((line, i) => (
           <div

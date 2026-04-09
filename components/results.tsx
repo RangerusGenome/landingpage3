@@ -8,7 +8,7 @@ const metrics = [
 const testimonials = [
   {
     quote:
-      "We had 800 products with manufacturer descriptions. ListingEtl rewrote everything in a week. Our organic traffic doubled within 60 days.",
+      "We had 800 products with manufacturer descriptions. CatalogSeo rewrote everything in a week. Our organic traffic doubled within 60 days.",
     //name: "Sarah Chen",
 
     avatarColor: "#e8510a",
@@ -18,15 +18,15 @@ const testimonials = [
     quote:
       "I was sceptical about AI-written copy, but the quality is genuinely better than what our freelance writer produced. And it was done in days, not months.",
     /// name: "Marcus Webb",
-    role: "COO, TrailPeak Outdoors",
+    //role: "COO, TrailPeak Outdoors",
     avatarColor: "#2dd4a0",
-    initials: "MW",
+    // initials: "MW",
   },
   {
     quote:
       "The free audit alone was worth it — showed me exactly why my competitors were outranking me.",
-    name: "Jessica Park",
-    role: "Owner, Bloom & Bristle Beauty",
+    //name: "Jessica Park",
+    //role: "Owner, Bloom & Bristle Beauty",
     avatarColor: "#9b7aff",
     initials: "JP",
   },

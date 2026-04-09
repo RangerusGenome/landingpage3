@@ -28,7 +28,7 @@ export function Nav() {
             className="font-serif text-xl font-bold tracking-tight"
             style={{ color: "var(--text-primary)" }}
           >
-            ListingEtl
+            CatalogSeo
           </span>
           <span
             className="w-2 h-2 rounded-full mb-2.5 inline-block"
@@ -54,12 +54,16 @@ export function Nav() {
         </div>
 
         {/* CTA */}
-        <a
-          href="#audit"
+        <button
+          onClick={() => {
+            if (typeof window !== 'undefined' && (window as any).Calendly) {
+              (window as any).Calendly.initPopupWidget({url: 'https://calendly.com/trevorkuhlmannk/free-store-audit-15-mins'});
+            }
+          }}
           className="btn-orange hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold"
         >
           Get Free Audit
-        </a>
+        </button>
 
         {/* Mobile menu button */}
         <button

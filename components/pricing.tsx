@@ -1,3 +1,5 @@
+"use client"
+
 import { Check } from "lucide-react"
 
 const plans = [
@@ -142,19 +144,27 @@ export function Pricing() {
 
                 {/* CTA */}
                 {plan.featured ? (
-                  <a
-                    href="#audit"
+                  <button
+                    onClick={() => {
+                      if (typeof window !== 'undefined' && (window as any).Calendly) {
+                        (window as any).Calendly.initPopupWidget({url: 'https://calendly.com/trevorkuhlmannk/free-store-audit-15-mins'});
+                      }
+                    }}
                     className="btn-orange flex items-center justify-center gap-2 py-3 rounded-full text-sm font-semibold text-center"
                   >
                     {plan.cta}
-                  </a>
+                  </button>
                 ) : (
-                  <a
-                    href="#audit"
+                  <button
+                    onClick={() => {
+                      if (typeof window !== 'undefined' && (window as any).Calendly) {
+                        (window as any).Calendly.initPopupWidget({url: 'https://calendly.com/trevorkuhlmannk/free-store-audit-15-mins'});
+                      }
+                    }}
                     className="btn-ghost flex items-center justify-center gap-2 py-3 rounded-full text-sm font-semibold text-center"
                   >
                     {plan.cta}
-                  </a>
+                  </button>
                 )}
               </div>
             </div>
