@@ -7,7 +7,7 @@ export function CtaSection() {
       className="relative py-28 grain overflow-hidden"
       style={{ backgroundColor: "var(--bg-primary)" }}
     >
-      {/* Radial glow */}
+      {/* Radial glowss */}
       <div
         className="absolute inset-0 pointer-events-none"
         aria-hidden="true"
